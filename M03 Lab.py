@@ -1,7 +1,14 @@
+"""
+Name: Ross Gandy
+File Name: "M03 Lab.py
+Desc: takes in user input and neatly presents the informationa about a car
+"""
+#handles the main vehicle type
 class Vehicle():
     def __intit__(self, type):
         self.type = type
 
+#subtype of vehicle, handles object creation
 class Car(Vehicle):
     def __init__ (self, type, year, make, model, door, roof):
         self.type = type
