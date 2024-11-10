@@ -1,8 +1,6 @@
 class Vehicle():
     def __intit__(self, type):
         self.type = type
-    def getType():
-        return type
 
 class Car(Vehicle):
     def __init__ (self, type, year, make, model, door, roof):
@@ -14,7 +12,7 @@ class Car(Vehicle):
         self.roof = roof
 
         Vehicle.__init__(type)
-
+    #handles printing info about the car object
     def printInfo(self):
         print('Vehichle Type: ', self.type)
         print("Year: ", self.year)
@@ -22,7 +20,7 @@ class Car(Vehicle):
         print('Model: ', self.model)
         print('Number of doors: ', self.door)
         print('Type of roof: ', self.roof)
-
+#user input and object creation
 car_type = str(input("What type of vehicle?"))
 car_year =str(input("What year is the car from?"))
 car_make = str(input("What is the make?"))
